@@ -1,0 +1,565 @@
+/* Tüm öğelerin kenar boşluklarını sıfırlar ve kutu modelini belirler */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Sayfanın genişliğini belirler ve alt kenar boşluğu ekler */
+body {
+    width: 100%;
+
+}
+
+/* Header alanının tam genişlikte olmasını sağlar */
+header {
+
+    width: 100%;
+}
+
+/* Menü bağlantılarının stilini belirler */
+.menu ul li a {
+    text-decoration: none;
+    color: #000;
+    padding: 2px;
+    font-size: 20px;
+}
+.menu{
+    width: 100%;
+    min-width: 100%;
+}
+/* Menüdeki bağlantılara hover efekti ekler */
+.menu ul li a:hover {
+    color: gray;
+    transition: 100ms;
+    border-bottom: solid 2px #BB5A3A;
+}
+
+/* Aktif sayfa bağlantısını vurgular */
+.active {
+    color: #BB5A3A !important;
+    border-bottom: 2px #BB5A3A solid;
+}
+
+/* Menü liste elemanlarının noktasız görünmesini sağlar */
+.menu ul li {
+    list-style-type: none;
+}
+
+/* Menü listesini sağ tarafa hizalar ve flexbox kullanarak düzenler */
+.menu ul {
+    float: right;
+    display: flex;
+    gap: 60px;
+    padding: 20px;
+    align-items: center;
+}
+
+/* Logo stilini belirler */
+.logo {
+    text-decoration: none;
+    color: #000;
+    padding: 20px;
+    display: inline-flex;
+    font-size: 22px;
+    font-weight: 800;
+    align-items: center;
+}
+
+/* Sosyal medya bağlantıları için stil tanımlamaları */
+.social {
+    display: flex;
+    background-color: #000;
+}
+
+.social ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+/* Sosyal medya ikonları üzerine gelindiğinde renk değiştirir */
+.social ul li a:hover {
+    color: #44477e;
+    transition: 100ms;
+}
+
+.social ul li {
+    list-style-type: none;
+}
+
+.social ul {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    margin: auto;
+    padding: 10px;
+}
+
+section {
+    padding-top: 50px;
+}
+
+/* Giriş resmi için yuvarlak köşe efekti ekler */
+.intro img {
+    border-radius: 15px;
+}
+
+/* Giriş bölümü düzenlemeleri */
+.intro {
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    float: left;
+}
+
+/* Hakkımda bölümü düzenlemeleri */
+.about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.about-me img {
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+}
+
+.about-me h1 {
+    padding-bottom: 10px;
+    font-size: 30px;
+}
+
+.about-me h2 {
+    padding-top: 10px;
+}
+
+.about-me p {
+    font-size: 18px;
+    width: 50%;
+    text-align: justify;
+    padding: 5px;
+}
+
+/* Daha fazla oku butonu stil ayarları */
+#read-more {
+    background-color: #ffab8f;
+    margin-top: 10px;
+    flex: 1;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px #000 solid;
+}
+
+#read-more a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 18px;
+}
+
+#read-more a:hover {
+    opacity: 0.9;
+    transition: 100ms;
+}
+
+/* Blog bölümü düzenlemeleri */
+.blog {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Blog içeriği için stil ayarları */
+.box {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    border: 1px #000 solid;
+    padding: 15px;
+    border-radius: 15px;
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+}
+
+.box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.box img {
+    width: 450px;
+    height: 450px;
+    border-radius: 15px;
+}
+
+.box h3 {
+    width: 450px;
+    font-size: 25px;
+    font-family: 'Raleway', sans-serif;
+    text-align: justify;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+}
+
+.box p {
+    width: 450px;
+    font-size: 18px;
+    font-family: 'Merriweather', sans-serif;
+    text-align: justify;
+}
+
+/* Blog detayları için bağlantı stilleri */
+#blog-details p a {
+    font-size: 12px;
+    color: #000;
+    padding-right: 5px;
+    text-decoration: none;
+    font-family: "Capita W01 Regular";
+    opacity: 0.7;
+}
+
+#blog-details p a:hover {
+    opacity: 1;
+    transition: 100ms;
+}
+
+#blog-details {
+    padding-top: 10px;
+}
+
+/* Blog daha fazla oku butonu */
+#blog-read-more {
+    margin-top: 50px;
+}
+
+/* Daha fazla gör butonu */
+.see-more {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.see-more-border a {
+    color: #F5F5DC;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.see-more-border {
+    background-color: #B5651D;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+/* En çok okunan bölümü düzenlemeleri */
+.most-read ul li a {
+    color: #000;
+}
+
+footer {
+    display: flex;
+    flex: 1;
+}
+
+.recomended {
+    width: 100%;
+    display: flex;
+    flex: 1;
+    margin: 50px;
+}
+
+.most-read {
+    width: 50%;
+    height: 500px;
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    float: left;
+}
+
+.most-liked {
+    width: 50%;
+    height: 500px;
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-bottom: 20px;
+    padding-left: 50px;
+}
+
+#most-liked-title {
+    list-style-type: none;
+    font-size: 18px;
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+.most-liked ul li {
+    padding: 5px;
+    list-style-type: upper-roman;
+}
+
+.most-liked ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.most-liked ul li a:hover {
+    opacity: 0.7;
+    transition: 100ms;
+}
+
+#most-read-title {
+    list-style-type: none;
+    font-size: 18px;
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+footer {
+    background-color: #FFAB5B;
+    margin-top: 20px;
+
+}
+
+.most-read ul li {
+    padding: 5px;
+    list-style-type: upper-roman;
+
+}
+
+.most-read ul li a {
+    text-decoration: none;
+}
+
+.most-read ul li a:hover {
+    opacity: 0.7;
+    transition: 100ms;
+}
+
+
+.Index-contact {
+
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #000;
+    flex-direction: column;
+    text-align: left;
+    padding: 20px;
+}
+
+#social-media {
+    display: flex;
+    gap: 30px;
+}
+
+#social-media a {
+
+    text-decoration: none;
+    color: white;
+
+}
+
+#social-media a:hover {
+    color: #44477e;
+    transition: 100ms;
+}
+
+#contact-adress {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 15px;
+}
+
+#contact-adress #phone-div {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+#contact-adress a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#contact-adress #phone:hover {
+    color: #44477e;
+    transition: 100ms;
+}
+
+#contact-adress #mail:hover {
+    color: #44477e;
+    transition: 100ms;
+}
+
+#copyright p {
+    color: #fff;
+    padding: 5px;
+}
+
+#copyright {
+    display: flex;
+    padding-top: 10px;
+}
+
+.about-img {
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+}
+
+.about-img img {
+    width: 1200px;
+    height: 300px;
+}
+
+.about-img h1 {
+    position: absolute;
+    top: 180px;
+    font-size: 50px;
+    font-family: 'Amiri', sans-serif;
+    color: #fff;
+}
+
+.about-text {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.about-text h1 {
+    width: 800px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 20px 0px 20px 0px;
+    font-size: 28px;
+    font-family: 'Amiri', sans-serif;
+}
+
+.about-text p {
+    width: 800px;
+    font-size: 21px;
+    margin-bottom: 30px;
+    font-family: 'Amiri', sans-serif;
+}
+
+.about-text p a {
+    color: #000dff;
+    text-decoration: none;
+    font-style: italic;
+}
+
+.about-text p a:hover {
+    opacity: 0.8;
+    transition: 100ms;
+}
+
+
+.information {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 100px 30px 100px;
+    box-shadow: 1px 1px 1px rgb(0, 0, 0);
+    border-radius: 30px;
+
+}
+
+.information h1 {
+    font-size: 30px;
+    width: 60%;
+    font-family: 'Amiri', sans-serif;
+
+}
+
+.information p {
+
+    width: 80%;
+    padding-top: 10px;
+    text-align: left;
+    font-size: 18px;
+    font-family: 'Amiri', sans-serif;
+}
+
+/*Form Sayfası Kodları*/
+
+form {
+    padding-left: 10px;
+    margin-top: 50px;
+}
+
+label {
+    display: block;
+    margin-bottom: 15px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px black solid;
+    border-radius: 20px;
+    font-size: 18px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #000;
+    border: 1px solid #000;
+}
+
+textarea {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 50px;
+    padding: 8px;
+    border: 1px #000 solid;
+    border-radius: 20px;
+    font-size: 18px;
+    color: #000;
+    border: 1px solid #000;
+    height: 85px;
+}
+
+button {
+    width: 5%;
+    padding: 12px;
+    border: none;
+    border-radius: 20px;
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: #000;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+button:hover {
+    background-color: #ff6347;
+    transition: 300ms;
+}
